@@ -1,0 +1,108 @@
+:root {
+    --background-yellow: rgb(217, 195, 54);
+}
+
+@font-face {
+    font-family: Figtree;
+    src: url(Figtree.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: Figtree, 'Roboto';
+    background: var(--background-yellow);
+}
+
+.card {
+    border: 1px solid black;
+    border-radius: 25px;
+    background-color: white;
+    z-index: 3;
+
+    padding: 25px;
+    position: absolute;
+    width: 350px;
+    height: 500px;
+    top: 50%;
+    left: 50%;
+    margin-top: -325px;
+    margin-left: -185px;
+}
+
+.card-2 {
+    border-radius: 25px;
+    background-color: black;
+    z-index: 2;
+
+    padding: 25px;
+    position: absolute;
+    width: 350px;
+    height: 500px;
+    top: 51%;
+    left: 51%;
+    margin-top: -325px;
+    margin-left: -190px;
+}
+
+.container {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    margin: 7px;
+}
+
+.card-image1 {
+    border-radius: 10px;
+    position: relative;
+}
+
+.card-category {
+    display: inline-block; /* wraps border around text */
+    margin: 15px 0; /*1st value is top & bottom, 2nd value is right & left */
+    padding: 5px 12px;
+    border: 1px solid var(--background-yellow);
+    border-radius: 5px;
+    background-color: var(--background-yellow);
+    font-weight: 700;
+}
+
+.card-date {
+    font-size: 1em;
+    font-weight: 500;
+}
+
+.card-title {
+    margin: 15px 0;
+    font-weight: 800;
+    font-size: 1.6em;
+    z-index: 7;
+}
+
+.card-content {
+    font-size: 1.1em;
+    line-height: 1.4;
+    color: gray;
+}
+
+.card-author {
+    display: flex;
+    font-weight: bold;
+    font-size: 1.1em;
+    vertical-align: middle;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+.card-image2 {
+    max-height: 40px;
+    max-width: 40px;
+}
+
+.card-author span {
+    margin: 10px;
+}
